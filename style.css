@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+body{
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.grand_child,
+input{
+    display:flex;
+    justify-content:flex-end;
+    margin: 4px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 3px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+input {
+    font-family: fontawesome;
+    padding: 10px;
+}
+
+
+::placeholder {
+    font-size: 20px;
+}
+
+span {
+    font-family: cursive;
+    padding: 10px;
+}
+
+.connect {
+    padding: 5%;
+}
+
+
+#input {
+    display: flex;
+}
+
+.one {
+    font-size: 30px !important;
+    color: #3b5998;
+    padding: 10px;
+}
+
+.gender {
+    display: flex;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+p {
+    text-align: justify;
+}
+
+#c_Account {
+    background-color: #449d44;
+    border-color: #398439;
+    padding: 7px 20px;
+    font-weight: bold;
+}
+
+#last {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: blueviolet;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+.main-container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        'nav nav nav nav nav nav'
+        'connect connect connect connection connection signup'
+    ;
+
+}
+
+nav {
+    border: 1px solid;
+    grid-area: nav;
+}
+
+.connect {
+    /* border: 1px solid; */
+    grid-area: connect;
+    padding: 20px;
+}
+
+.sign_up {
+    /* border: 1px solid; */
+    grid-area: signup;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 720px) {
+    .main-container {
+        display: grid;
+        height: 100vh;
+        grid-template-areas:
+            'nav nav nav nav nav nav'
+            'connect connect connect connect connect connect'
+            'signup signup signup signup signup signup'
+        ;
+    }
+
+}
+
+h1{
+    text-transform:capitalize;
+}
